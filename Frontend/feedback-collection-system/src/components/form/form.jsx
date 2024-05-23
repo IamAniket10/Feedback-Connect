@@ -41,7 +41,7 @@ const FeedbackForm = () => {
 
     try {
       // Send data to backend
-      const response = await axios.post('http://localhost:5000/feedback', formData);
+      const response = await axios.post('https://feedback-connect-backend.vercel.app/feedback', formData);
 
       console.log('Feedback submitted:', response.data);
       setSubmitted(true);
@@ -64,7 +64,7 @@ const FeedbackForm = () => {
 
 
   useEffect(() => {
-    axios.get('http://localhost:5000/form', { withCredentials: true })
+    axios.get('https://feedback-connect-backend.vercel.app/form', { withCredentials: true })
       .then(result => {
         console.log(result)
         if (result.data !== "Success") {
