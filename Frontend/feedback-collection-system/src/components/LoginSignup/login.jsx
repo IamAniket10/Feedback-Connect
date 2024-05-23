@@ -19,7 +19,7 @@ function Login() {
 
     const handleFormSubmit = (event) => {
         event.preventDefault();
-        axios.post('https://feedback-connect-frontend.vercel.app/login', { email, password })
+        axios.post('https://feedback-connect-backend.vercel.app/login', { email, password })
             .then(result => {
                 console.log(result);
                 if (result.data === "Success") {
