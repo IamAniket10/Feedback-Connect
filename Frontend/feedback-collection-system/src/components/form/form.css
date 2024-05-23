@@ -1,0 +1,157 @@
+/* form.css */
+
+.confirmation-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 25px auto;
+  padding: 20px;
+  /* background-color: #fff; */
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.4);
+
+}
+
+.confirmation-message h2 {
+  color: #3c009d;
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.confirmation-message .underline {
+  width: 200px;
+  height: 5px;
+  background: #3c009d;
+  border-radius: 9px;
+  margin-bottom: 25px;
+}
+
+.confirmation-message p {
+  color: #040404;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 25px auto;
+  padding: 20px;
+  /* background-color: #fff; */
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.form h2 {
+  color: #3c009d;
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+.undertheline {
+  width: 200px;
+  height: 5px;
+  background: #3c009d;
+  border-radius: 9px;
+  margin-bottom: 30px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #040404;
+}
+
+.form input,
+.form textarea,
+.form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  background: #eaeaea;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+.form textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.form select {
+  appearance: none;
+  background-color: #eaeaea;
+}
+
+.form button[type="submit"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 59px;
+  color: #fff;
+  background: #4c00b4;
+  border-radius: 50px;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.form button[type="submit"]:hover {
+  background-color: #3c009d;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+  .confirmation-message {
+    padding: 15px;
+  }
+
+  .confirmation-message h2 {
+    font-size: 35px;
+  }
+
+  .confirmation-message p {
+    font-size: 25px;
+  }
+
+  .form {
+    padding: 15px;
+  }
+
+  .form h2 {
+    font-size: 35px;
+  }
+
+  .form input,
+  .form textarea,
+  .form select {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .form button[type="submit"] {
+    width: 200px;
+  }
+}
+
+
+

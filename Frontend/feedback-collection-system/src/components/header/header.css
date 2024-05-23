@@ -1,0 +1,31 @@
+/* Header styling */
+.header {
+    background: linear-gradient(#2A00B7) ; /* Blue background */
+    color: #ffffff; /* White text */
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px; /* Maximum width for content */
+    margin: 0 auto; /* Center the content horizontally */
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 38px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .header-container {
+      padding: 15px;
+    }
+  
+    .header h1 {
+      font-size: 38px;
+    }
+  }
+  
