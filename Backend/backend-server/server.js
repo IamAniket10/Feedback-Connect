@@ -33,6 +33,11 @@ app.use(function(req, res, next) => {
 })
 
 
+app.get("/", (req, res) => {
+  res.json("Hello");
+});
+
+
 //signup
 app.post('/signup', (req, res) => {
   const { name, email, password } = req.body;
