@@ -4,8 +4,6 @@ import './form.css';
 import { useNavigate } from 'react-router-dom';
 
 
-axios.defaults.withCredentials = true;
-
 const FeedbackForm = () => {
   // State variables to store user input
   // const [name, setName] = useState('');
