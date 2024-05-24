@@ -14,23 +14,23 @@ const app = express();
 const PORT = 5000;
 
 app.use(cors({
-  origin: ["https://feedback-connect-frontend.vercel.app"],
-  methods: ["GET","POST"],
+  origin: "https://feedback-connect-frontend.vercel.app",
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true
 }));
 app.use(bodyParser.json());
 app.use(cookieParser());
 
 
-app.options('*', cors());
+app.options('*', cors())
 
 
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Methods', 'GET,HEAD,OPTIONS,POST,PUT,DELETE');
-  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization, client-security-token');
-  next();
-});
+app.use(function(req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*')
+  res.header('Access-Control-Allow-Methods', 'GET,HEAD,OPTIONS,POST,PUT,DELETE')
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization, client-security-token')
+  next()
+})
 
 
 //signup
