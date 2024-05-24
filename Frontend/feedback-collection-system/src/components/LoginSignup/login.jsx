@@ -17,6 +17,8 @@ function Login() {
     const [action, setAction] = useState("Login");
     const navigate = useNavigate();
 
+    axios.defaults.withCredentials= true;
+    
     const handleFormSubmit = (event) => {
         event.preventDefault();
         axios.post('https://feedback-connect-backend.vercel.app/login', { email, password })
