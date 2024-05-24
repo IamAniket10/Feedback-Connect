@@ -22,15 +22,15 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 
 
+app.options('*', cors());
+
+
 app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'https://feedback-connect-frontend.vercel.app');
+  res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Methods', 'GET,HEAD,OPTIONS,POST,PUT');
-  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization, client-security-token');
   next();
 });
-
-
-app.options('*', cors());
 
 
 //signup
