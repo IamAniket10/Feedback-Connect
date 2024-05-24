@@ -14,8 +14,8 @@ const app = express();
 const PORT = 5000;
 
 app.use(cors({
-  origin: 'https://feedback-connect-frontend.vercel.app',
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  origin: ["https://feedback-connect-frontend.vercel.app"],
+  methods: ["GET","POST"],
   credentials: true
 }));
 app.use(bodyParser.json());
