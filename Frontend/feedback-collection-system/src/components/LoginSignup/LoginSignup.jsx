@@ -21,7 +21,7 @@ const LoginSignup = () => {
 
     const handleFormSubmit = (event) => {
         event.preventDefault();
-        axios.post('https://feedback-connect-backend.vercel.app/signup', {name, email, password})
+        axios.post('https://feedback-connect-backend.vercel.app/signup/', {name, email, password})
         .then(result => {
             console.log(result);
             navigate('/login');
